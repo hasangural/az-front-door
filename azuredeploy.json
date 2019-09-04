@@ -23,13 +23,13 @@
             "maxLength": 2,
             "minLength": 1,
             "metadata": {
-                "description": "This parameters is referred to as the resource EnvironmentInstanceId which includes Env and InstanceId. Example: p01, t01"
+                "description": "This parameters is referred to as the Resouce Id. Example: 01, 02"
             }
         },
         "customDomainName": {
             "type": "string",
             "metadata": {
-                "description": "This parameters is referred to as the resource prefix and describes service names. Example: Platform(P) - Business(B)"
+                "description": "Provide your Web Application URL."
             }
         },
         "backendAddress": {
