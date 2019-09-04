@@ -1,7 +1,7 @@
 This code shows that how you can deploy Azure Front Door Profile and Web Application Firewall policies for your web application with Azure Resource Manager Template. This template has been developed for you are already running Web App on the Azure Region. When you deploy this template, you also need to provide your web App Address or FQDN.
 This template needs parameters which will be used for deployment process. 
 
-As you may know that typical concern in a Reverse Proxy or WaF solution are to block traffic coming directly to the back-end service. That is possible to do that with Web App Firewall Settings. If you want to block traffic for direct accessing to your Web App, you should consider to add Fron Door Service IP Addresses on the'Access Restrictions' settings on the your Azure Web App
+One of the primary functions of a Reverse Proxy or WaF solution is to block traffic coming directly to the back-end service and force all incoming traffic via the security appliance. This can be achieved with AFDs Web App Firewall Settings. In order to achieve this using the IP Access Restrictions section of the Azure Web App, restrict incoming traffic to only be accepted from the AFD address space
 *  **IPv4 – 147.243.0.0/16**
 *  **IPv6 – 2a01:111:2050::/44**
 
