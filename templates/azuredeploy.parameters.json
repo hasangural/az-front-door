@@ -1,0 +1,25 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+      "ServiceId": {
+        "value": "__ServiceId__"
+      },
+      "EnvironmentInstanceId": {
+        "value": "__EnvironmentInstanceId__"
+      },
+      "ResourceId": {
+        "value": "__ResourceId__"
+      },
+      "customDomainName": {
+        "value": "__customDomainName__"
+      },
+      "backendAddress": {
+        "value": "__backendAddress__"
+      },
+      "Tags": {
+        "value": "__Tags__"
+      }
+
+    }
+  }
