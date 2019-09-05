@@ -99,6 +99,9 @@
                             "frontendEndpoints": [
                                 {
                                     "id": "[resourceId('Microsoft.Network/frontDoors/frontendEndpoints', variables('frontDoorName'), 'frontendEndpoint1')]"
+                                },
+                                {
+                                    "id": "[resourceId('Microsoft.Network/frontDoors/frontendEndpoints', variables('frontDoorName'), 'frontendEndpoint2')]"
                                 }
                             ],
                             "acceptedProtocols": [
