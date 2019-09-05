@@ -98,9 +98,6 @@
                         "properties": {
                             "frontendEndpoints": [
                                 {
-                                    "id": "[resourceId('Microsoft.Network/frontDoors/frontendEndpoints', variables('frontDoorName'), 'frontendEndpoint1')]"
-                                },
-                                {
                                     "id": "[resourceId('Microsoft.Network/frontDoors/frontendEndpoints', variables('frontDoorName'), 'frontendEndpoint2')]"
                                 }
                             ],
@@ -181,8 +178,11 @@
                         "name": "frontendEndpoint2",
                         "properties": {
                             "hostName": "[parameters('customDomainName')]",
-                            "sessionAffinityEnabledState": "Disabled",
-                            "sessionAffinityTtlSeconds": 0
+                            "sessionAffinityEnabledState": "Enabled",
+                            "sessionAffinityTtlSeconds": 60,
+                            "webApplicationFirewallPolicyLink": {
+                                "id": "[variables('frontdoorwafPolicyRef')]"
+                            }
                         }
                     }
                 ],
